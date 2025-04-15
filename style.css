@@ -1,0 +1,115 @@
+h1 {
+    font-family: Verdana;
+    font-size:500px;
+    
+
+  }
+  
+
+p {
+    font-style: italic;
+ }
+
+ p {
+  font-size: 16px;
+  transition: font 0.3s;
+  }
+  p{
+    text-decoration:none;
+    text-align:center;
+  }
+  p:hover{
+    text-decoration:underline;
+  }
+
+  .centered-link {
+    text-decoration: underline;
+}
+  
+  
+  
+  p.hover {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+  }
+  
+.centered-link {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+
+ .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.letter {
+  font-size: 20px;
+  transition: font-size 0.3s ease-in-out;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.letter:hover {
+  font-size: 36px;
+}
+
+.a { font-family: 'Arial', sans-serif; }
+.b { font-family: 'Courier New', monospace; }
+.c { font-family: 'Georgia', serif; }
+.d { font-family: 'Impact', fantasy; }
+.e { font-family: 'Times New Roman', serif; }
+.f { font-family: 'Verdana', sans-serif; }
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: aliceblue;
+}
+
+.banner {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out; 
+}
+
+h1 {
+  display: inline
+  animation: colorChange 4s linear infinite, blink 2s linear infinite;
+  font-size:20px;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    color:darkred;
+  }
+  25% {
+    color:green;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color:darkorange;
+  }
+}
+
+
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
